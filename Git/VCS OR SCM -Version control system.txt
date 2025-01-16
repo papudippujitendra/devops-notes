@@ -1,0 +1,33 @@
+VCS OR SCM :-Version control system / source code management.
+
+Why we need version control ?
+collaboration 
+storing versions
+figuring out what happened 
+Backup.
+
+What is Version Control ? :- Version control is a system that documents change made to file or set of files. 
+Types of VCS
+1) Local version control (LVC) :- The practice of having the version database in  the local computer ,local database keeps a record version database.
+	Issue: Multiple people parallelly working on the same project.
+	Solution: Centralized version control.
+
+2) Centralized version control (CVC):- LCV Issues are resolved by cvc , In cvc  a central repository is maintained where all the version files are kept , now users can checkout and checking files from their different computer at any time.
+	Issue : IN case of central service failure whole system goes down. 
+	Solution: Distributed version control.
+
+3)Distributed version control (DVCS):- Version database  is stored at every user local system and at the remote server, User manipulate the local files and then upload the changes to the remote server, if any of the server die a client server can be used to restore.
+
+GIT :- Git is a distributed version control system (Dvsc) which record changes made to the files .
+
+Remote Reppository: the remote repository is the server when all colloborates upload change made to the files.
+
+
+Local Repository : local repository is a user copy of the version database.
+WORK SPACE user active directory . the user modify existing files and creates new files in the space , Git tracks these changes compared to your local repository.
+Stage: Stage is a place where all the modified files marked to be placed .
+Clone: clone command creates a copy of existing remote repository inside local repository .
+Push: Push command pushes all the changes made in the local repository to the remote repository.
+Fetch:Fetch command collects the changes made in remote repository and copies them to the local repository. 
+
+  
