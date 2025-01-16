@@ -1,0 +1,8 @@
+Branching  strategies  
+
+Main/master/major  
+dev (Developers) 
+qa  (Testing team) 
+release  
+feature  
+hotFix - Production issues  
