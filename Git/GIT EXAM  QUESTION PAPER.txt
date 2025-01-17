@@ -1,0 +1,69 @@
+GIT EXAM  QUESTION PAPER
+
+
+Git Module Question with Answer
+ 
+1. Which of the following commands initializes a new Git repository in the current directory?
+A) git init
+B) git start
+C) git create
+D) git new
+Answer: A) git init
+ 
+2. Which Git command is used to clone a remote repository to your local machine?
+A) git pull
+B) git clone
+C) git copy
+D) git download
+Answer: B) git clone
+ 
+3. What is a "fork" in Git?
+A) A copy of a repository made on the same remote server.
+B) A special type of Git branch.
+C) A clone of the repository, made for independent development.
+D) A command to create a new branch.
+Answer: C) A clone of the repository, made for independent development.
+ 
+4. How can you undo the last commit in Git but keep the changes in the working directory?
+A) git reset --soft HEAD~1
+B) git revert HEAD
+C) git reset --hard HEAD~1
+D) git undo commit
+Answer: A) git reset --soft HEAD~1
+ 
+5. To create a new branch in Git and how to go inside of that newly created branch ?
+Answer: git checkout -b <branch-name>
+ 
+6. What is .git folder and when it will come ?
+Ans: When we initialise, empty repository or when we clone empty repository .git folder will come.
+ 
+7. The command ______ <commit> allows you to create a new commit that undoes the changes introduced by the specified commit.
+Answer: git revert
+ 
+8. What is difference between git commit -m "msg" and git commit -am "New Msg" command ?
+Ans: git commit -m "msg" -- will work for new files/directories and git commit -am "New Msg" will work existing files/directories only.
+ 
+9. Which command can be used to delete a branch in Git?
+Answer: git branch -d <branch-name>
+ 
+10. Which command would you use to list all the branches in your repository?
+Answer: git branch
+ 
+11. what is the command to see the differences between the two commit ids ?
+Answer: git diff commit_id commit_id
+12. What is the purpose of the git stash ?
+Answer: To pause the work and start other tasks on priority basis.
+ 
+13. What is basic work flow of Git ?
+i. git clone <Git hub repo URL>
+ii. Modifications in Working Area
+iii. git add files or .
+iv. git commit -m "msg" 
+v. git push
+ 
+14. What is difference between Working Area and Staging Area ?
+Working area where modifications can be done.
+Staging area where modified files added from working area
+ 
+15. How can we push the newly created branch in local to origin or GitHub ??
+git push --set-upstream origin <branch-name>
