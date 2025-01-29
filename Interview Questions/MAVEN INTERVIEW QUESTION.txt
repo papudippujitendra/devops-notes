@@ -1,0 +1,4 @@
+MAVEN INTERVIEW QUESTION 
+
+--------------------------
+1)For the first time when we execute mvn command it will take more time but when we execute for the second time it will take less time because the repository dependencies is already stored in local repository.
