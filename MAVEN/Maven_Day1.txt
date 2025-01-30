@@ -36,7 +36,7 @@
 
 	•	Maven relies  on build life-cycle to define the process of building and distributing artifacts (eg jar file, war file) 
 
-4] There are three types of build in build life-cycle 
+4] There are three types of built-in build life-cycle 
 
 	•	Default -Handles project and deployment 
 
