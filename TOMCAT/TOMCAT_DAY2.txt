@@ -1,0 +1,73 @@
+TOMCAT_DAY2
+=========================================
+
+How to access the Application
+
+url--->  127.0.0.1:8080    or  localhost:8080/artifactname
+
+Here artifact name we can give as ex:- AJA , taxi-booking
+
+mvn archetype:generate -DgroupId=com.example.helloworld -DartifactId=helloworld -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+==========================================
+
+How we place the Artifact from maven project of Target folder to Apache Tomcat webapps folder
+
+cp <path where artifact> <path where webapps of tomcat>
+			or
+cp <source> <destination>
+			or
+<destination> cp/ <source>
+
+configuration changes we need to restart the server
+
+To change port number of these we should stop the server then change the default port number to other port number then you can start.
+					or
+ ctrl+c ----> To stop Tomcat
+
+GUI ----->Graphical user interface
+Manager Gui ---> Allows access to the HTML Gui and status pages
+*To deploy the application another way is Tomcat Gui
+*Access the url of Tomcat then such the war file to deploy option
+*click on choose file button it will open dialogue box we need to select artifact and then click on open button and click on deploy button.
+********************************************************
+
+How  can we access Apache Maven tomcat Gui ?
+
+Go to Apache Tomcat home folder 
+		|
+	conf
+		|
+Modify ( Tomcat-user.xml) 
+		|
+vi tomcat-user.xml(this is file name)
+		|
+We need to search for Username and password
+		|
+we need to change username and password ( username=admin password=admin@123)
+		|
+we need to uncomment these lines (<!-- and  --> )
+		|
+After modify we need to save and quit (esc then :wq!)
+
+
+Then after modifying the username and password go to
+ 
+Apache Tomcat access page  and go to manager give the username and password then
+Go to choose file after choose file
+Deploy
+
+
+***************************************************
+
+ ex :-If we need last 15 lines of the file the command is 
+
+tail -15 filename
+
+ex:- If we need first 5 lines of the file the command is 
+
+head -5 filename
+
+
+
+
