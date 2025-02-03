@@ -1,0 +1,89 @@
+JBOSS-WILDFLY
+
+**************************************************
+What is Jboss ?
+
+JBOSS is a powerful open source Java application server developer by Redhat.
+
+Wildfly has 2 ports
+
+1)Admin -------->9990
+2)Access the Application/ Artifacts ------>8080
+
+***************************************************
+
+Folder structure of Wildfly:-
+
+Domain
+Modules
+Welcome-content
+Docs
+Bin
+Appclient
+
+How we can start Wildfly ?
+Go to Home folder of wildfly then go to bin 
+standalone windows batch file 
+(jboss -->bin-->standalone.bat)
+
+How to shutdown wildfly (jboss) ?
+ press ctrl+c or run
+standalone .bat--stop
+
+How to create management console user ?
+<Home folder of wildfly >---<bin
+file name :add -user (windows batch file)
+What type of user do you wish to add
+a)Management user (mgnt-users .properties)
+b)Application user (application -user. properties)
+(A) a
+
+username
+password :-it will ask to retype the password
+
+How to access wildfly;-
+admin/management console :<url:9990>
+
+Active roles -->superuser
+*************************************************************************************
+
+Standalone (where will be having configuration deployment and logs)
+
+Configuration:- OF Application users specifics
+ex:- filenames
+mgmt-users.propperties
+mgmt-groups.properties
+
+Logs:- standalone --->log-->logs of the wildfly
+
+Deployment:- A deployment represents any thing that can be deployed (eg : an application such as EJB-JAR , WAR, EAR Any kind of standard archive such as RAR OR JBOSS - specific deployment into a server.
+
+you can use drag and drop to add new content or replace existing  deployment simply drag and drop one or several files onto the deployment with the same name the deployment will be added the deployment by drag and drop will be enabled.
+--->left side we will see + symbol click on that 
+upload deployment
+unmanaged deployment
+(create empty deployment)
+
+****************************************************
+How to deploy the application Artifact to Wildfly ?
+1)Copying the war file and pasting it deployment folder of wildfly home of wildfly-->standalone--> deployment
+2)cp <artifact source path><destination of deployment of wildfly
+3)Jboss wildfly GUI --> upload artifact.
+How to change Default port Number of Wildfly?
+
+1 .Navigate to the Wildfly Configuration file
+If running in standalone mode:
+Edit → standalone.xml (located in Wildfly_Home/standalone/configuration)
+2 .Find the management interface section:
+3 .Change the port → Example: 9090
+4 .Save the file and restart Wildfly
+Run standalone.bat
+5 .Access the new port in a browser:
+Change Default Application Deployment Folder
+Default location:
+You can change this location by modifying the system property:
+Steps:-
+Open standalone.conf.bat
+Located in Wildfly_Home/bin/
+Add (or modify) the following line:
+Restart Wildfly for the changes to take effect.
