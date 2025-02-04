@@ -23,11 +23,12 @@ Browse to Apache Tomcat website locate and download latest version 64-bit window
 Step 2:- Install Tomcat
 
 Install tomcat via the windows service installer for an automated and wizard guided experience
+If we download the zip file, we should follow the following steps
 
 --> After downloading the 64bit windows version zip file depending on your windows version unzip the download file right click the file select extract all.
 -->Extract all
 -->Navigate to the unzip file of Apache tomcat only
---> Default port number of Apache tomcat is 8080 if it all we want to change the default port number we need to go to Apache Tomcat.
+-->Default port number of Apache tomcat is 8080 if it all we want to change the default port number we need to go to Apache Tomcat.
 				Apache Tomcat -->conf-->server.xml
 <connector port ="8080" protocol="http/1.1"
 connection timeout ="2000"
