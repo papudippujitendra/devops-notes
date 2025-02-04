@@ -1,0 +1,81 @@
+JBOSS_WILDFLY_DAY2
+
+
+=====================================================================================
+
+Configurational changes:-
+
+Things to keep in mind before changing configurational changes
+1)Where to change
+2)Backup
+3)How to change
+4)Try to do in local environmental(system)
+5)Documentation
+
+Snapshot/Backup:-
+
+for wildly configuration snapshot changes
+-->Home folder  of wildfly --> standalone-->configuration--->standalone_xml_history  ----->snapshot
+filename:-standalone.v1
+ex:- port number change
+standalone _port change .v2
+Need to rename the original or existed file and then replace the customized as per requirement /change
+
+=========================================================================================
+
+Different status of the artifacts deployed in wildfly:-
+
+In wildfly deployed artifacts can have various status states including
+
+Deployed:- The application is successfully running on the wildfly server and accessible to  users.
+
+Undeployed:- The application has been removed from the server and is not currently running.
+
+Failed:- The deployment process encountered an error and the application is not running.
+
+Disabled:- The application is intentionally stopped by the administrator and cannot be accessed until enabled.
+
+Suspended:- The application is temporarily paused and can be resumed later.
+
+Redeploying:- The application is currently being updated with new code and is not fully available while the redeployment process is going.
+
+ Indicating whether the application is currently running not deployed encountered an error during deployment intentionally deactivated temporarily paused or is in the process of being re-deployed with updates
+
+=============================================================================================
+
+Accessing deployment status:-
+
+Wildfly management console :- you can view the status of deployed artifacts through the wildfly admin console which provides a list of deployment with their current state
+
+CLI (COMMAND LINE INTERFACE):- Using the wildfly command line interface you can query the status of deployments with management commands.
+
+================================================================================================
+
+Domain controller and host controller in Jboss (DCHC):-
+
+In Jboss wildfly a domain controller is the central management point for a group of server with in a domain responsible for maintaining the overall configuration and policy
+
+Host controller is a separate process running on each server with in domain communicating with the domain controller to manage the individual server instances on that host machine
+
+Essentially the domain controller  dictates the overall configuration and the host controller execute those configuration on their respective servers.
+
+=============================================================================================
+
+Key points about domain and host controller:-
+
+Domain controller:- 1) Act as the central management point for  the entire domain.
+2)Stores the domain wide configuration in a file called "domain.xml"
+ { Home folder ---> domain--->configuration---->domain.xml }
+
+3)Responsible for distributing configuration changes to all host can controller within the domain.
+
+Host controller :- 1)Manage the application server instances running on a specific host.
+2)Read its configuration from a "host.xml" file specific to that host
+
+ Home folder ---> domain--->configuration---host.xml
+3)Communicates with the domain controller to receive configuration updates and start/stop server instances.
+
+
+************Domain is referring to centralized  master where we can manage other wildfly servers************
+
+			**********here others is host DC and HC *************  
