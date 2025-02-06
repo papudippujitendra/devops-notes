@@ -76,7 +76,7 @@ Ex:- Credentials , Agent, Job etc
 Matrix Authorization strategy:- Matrix Authorization allows configuring the lowest level permissions such as starting new builds configuring items or deleting them individually 
 
 RBAC--->Role base access control where we can secure Jenkins.
-===========================================================================================================
+======================================================================================================================
 
 JENKINS PROJECTS OR JOBS :-
 
