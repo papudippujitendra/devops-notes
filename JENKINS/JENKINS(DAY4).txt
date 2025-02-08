@@ -1,0 +1,81 @@
+JENKINS(DAY4)
+
+
+Job Configuration of build Periodically Trigger and Poll Scm Trigger.
+
+Create New item -->Go trigger tab -->Check box build periodically or Poll Scm .Once check on Check box Scheduling comment  box will open up.
+-->There we need to Schedule as per requirement 
+
+ex:- To schedule a job at every minute every hour on Saturday 8th February
+		( * * 8 2 6 )  Give only one space only single digit
+
+Where First * means Every minute
+Where second * means Every Hour
+Where number 8  day of the month
+Where number 2  is the month (February )
+Where number 6 is the day of week (Saturday)
+
+-->Click on save wait for check for the jobs whether running as per the schedule or not
+
+Build after other projects are built :- Create more than 1 job then in triggers option select build after other projects are built.
+
+-->Once you check box that option need to pass PROJECT TO WATCH Name then click on SAVE and CHECK.
+EX:- Job1 , Job2 ,Job3
+ -->For Job2 put UPSTEAM project as Job1
+-->For Job3 put the UPSTREAM Job as Job2
+When we build Job1 Once job1 completed automatically downstream project has to be build.
+--->For Job2 once select the build after project are built and then select sub option trigger even if the build fails  then  SAVE.
+--->For job1 do some mistake wantedly and check for the all the jobs.
+
+
+Trigger Builds Remotely (Scripts) :- (WHAT ,WHY AND Purpose) 
+
+After Making all the configuration of projects .If we want to know the further status of that project or job  and  also when we can't build the project on own then you can use URL Which contain the token and we can build the project by giving to the USERS .
+
+
+
+============================================================================================================================
+
+Pipe line Projects:-
+We are going for pipeline project in order to secure the CICD pipe line code by storing in any of the Repository ( GITHUB , BITBUCKET ,GITLAB )
+--->Sample  Hello World Pipeline script creation.
+--->Click on new item select pipeline and click on OK.
+--->Go for pipeline  option in configuration where we can define or write the pipeline script.
+---> We can write script script tab or else we can take it from SCM.
+--->In the script tab click on drop down option to try sample pipeline.
+
+
+
+
+	Pipeline {
+		agent any
+	Stages{
+	  Stages ('Hello') {
+		steps{
+		   echo 'Hello world'
+		}
+	      }
+	   }
+	}
+
+--->Click on Save.
+--->Make sure that Stage View Plugin Should be installed so that we can see stages.
+
+===============================================================================================================================
+
+Rebuild  vs Replay:-
+
+When we use Rebuild we are not changing Any thing but where as replay gives us provision to change the code then and their.
+--->replay we can also use it as one of the trouble shooting Mechanism.
+--->If we do not know how to write pipeline script code we have the Advantage of Snippet  Generator. in PIPELINE SYNTAX Option pipeline syntax option will only visible when you create pipeline project or Job.
+
+
+Snippet Generator:- This Snippet Generator will help you learn the pipeline script code which can used to define various steps . Pick a step you are interested in form the list configure it click generator pipeline script and you will see a pipeline statement that would call the step with that configuration you copy and paste the whole statement into your script or pick up just the options you care about .
+
+ex:- To Print Message.
+In sample steps of Snipper Generator we can such for ECHO OR PRINT .
+There is a Step echo: Print message
+--->Then What we want Print we have Pass it in message block.
+--->Then Click on Generator Pipeline Script Which Will Give us Script to Print Message.
+--->By Default Pipeline Execution will work on  serially (one by one) if the previous passed then only it will go  next or Further Stages. 
+  

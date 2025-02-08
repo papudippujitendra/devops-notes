@@ -1,14 +1,14 @@
-JENKINS-DAY3
+ JENKINS-DAY3
 
 What if Jenkins user forgot the password  ?
 
 --->As a Jenkins administrator their is a provision to reset the users credentials.
 --->Manage jenkins-->security-->users-->go to user need to reset and click on security (left side) .
 --->Their we will see password and confirm password .
---->their  you can change the password and click on save.
+--->Their  you can change the password and click on save.
 --->Once as a administrator to change password again you need to inform to user please to user please follow below steps to change password.
 
-Once logged in to user GUI
+Once logged in to user GUI  
 Username--->security(top right corner)
 their you can change the password
 click on save
