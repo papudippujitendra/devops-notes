@@ -77,5 +77,36 @@ In sample steps of Snipper Generator we can such for ECHO OR PRINT .
 There is a Step echo: Print message
 --->Then What we want Print we have Pass it in message block.
 --->Then Click on Generator Pipeline Script Which Will Give us Script to Print Message.
---->By Default Pipeline Execution will work on  serially (one by one) if the previous passed then only it will go  next or Further Stages. 
+--->By Default Pipeline Execution will work on  serially (one by one) if the previous passed then only it will go  next or Further Stages.
+
+
+===================================================================================================================
+
+
+
+API :- Application Programming Interface is a set of rules and Protocols that allow Different Software Applications to communicate with each other
+Purpose:-
+1)Enabling Communication Between systems
+2)Simplifying Development
+3)Enhancing security
+4)Automating processes
+5)Extending functionality
+ex:- REST API (fetching data from a site social media(facebook ,Twitter)
+
+
+BDD:- Behavioural Driven Development Is a software development methodology testers and business stakeholders it focuses on defining how an application  should before from the end user.
+TDD:- BDD extends Test Driven Development   By using natural language description to create test cases. Where tests are written before actual code follows red green refactor.
+
+
+
+============================================================================================================================
+
+How to create New /Project/ Job from Existing Jobs ?
+
+Click on new item give the job name and select the item scroll down to bottom their you can see copy from option 
+-->in the copy from tab we need to pass the job name which want to make use of existing job configuration 
+ex:- Create job10 (take the reference of job8 configuration)
+
+
+ 
   
