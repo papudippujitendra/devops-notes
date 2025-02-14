@@ -1,0 +1,53 @@
+Jenkins_day6
+
+
+Tools Configuration in Jenkins:
+=====================================================================================
+If we want to configure tools like Apache Maven, Docker, etc., 
+we need to go to: Manage Jenkins → System Configuration → Tools(Configure tools, their locations & automatic installers)
+
+ Ex: To Configure Apache Maven (Specific Version 3.6.0)
+1. To configure Apache Maven in the tools tab, we should install the Apache Maven Plugin. 
+After installing the plugin, we can see Maven installations in the Tools section.
+2. Add Maven → Specify requirements
+3.Click on add maven then you can go for specific requirements.
+4. To install automatically, check the "Install Automatically" option.
+
+=================================================================================================
+
+ How to  Trigger a job  Remotely:-
+
+To configure this kind of requirement, we can make use of:
+
+Triggers → Trigger Build Remotely using Authentication Token
+
+1. Create a "Freestyle Job" with the name "Build remotely".
+2. Check the "Trigger Build Remotely" option.
+3. Configure any build step with an authentication token.
+4. Save the configuration.
+5. To check this job, use the following URL:
+
+   JENKINS_URL/job/buildremotely/build?token=TOKEN_NAME
+
+   - JENKINS_URL → The Jenkins instance URL.
+   - buildremotely → The job name.
+   - TOKEN_NAME → The authentication token configured.
+
+ Ex:-
+   localhost:9999/job/buildremotely/build?token=abc-123**          (Here localhost is our localhost port number)
+==============================================================================================================================
+
+  Another Way of Triggering a Job Remotely:-
+  
+To trigger another job in Command Prompt, use the following command:
+
+
+curl -u Admin:API TOKEN NEMBER -X POST localhost:8999/job/job2/build
+
+- -u → Specifies the user (Admin).
+- POST → HTTP method used to trigger the job.
+
+API which has to be generated with the user admin.
+
+
+
