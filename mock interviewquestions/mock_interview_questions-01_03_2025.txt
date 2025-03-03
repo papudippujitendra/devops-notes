@@ -1,0 +1,26 @@
+Mock Interview Questions (01/03/2025)
+
+1)what is Git ?
+2)Why you choose Git ?
+3)What is Cherry Pick ?
+4)When we do git commit what are the changes you will absorb ?
+5)Git work flow ?
+6)What git push will do ?
+7)git status
+8)git pull
+9)How to rename branch name ?
+10)amend
+11)git  revert ?
+12)What is Jenkins ?
+13)What is CI/CD ?
+14)Can I give permissions to only specific job in Jenkins ?
+15)What is job in Jenkins ?
+16)What is Nodes and Steps in Jenkins ?
+17)Trigger in Jenkins ?
+18)Difference between Upstream and Download ?
+19)Multi Branching in Pipeline ?
+20)cat is used for ?
+21)What are the commands used for creating files ?
+22)Git is a third party tool or not ?
+23)How do you Integrate git in Jenkins ?
+24)vi command purpose ?
